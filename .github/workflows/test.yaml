@@ -6,9 +6,9 @@ name: Tests (pytest)
 # The trailing colon is intentional!
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 # This is a list of jobs that the action will run. In this case, we have only
 # one job called test.
