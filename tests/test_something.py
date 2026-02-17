@@ -81,8 +81,9 @@ def test_calculate_area(p1x, p1y, p2x, p2y, p3x, p3y, expected):
 
 
 def func(a, b):
-    return a + b
+    return a - b
 
 
 def test_func():
     assert func(2, 7) == 9
+
