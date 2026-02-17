@@ -10,14 +10,12 @@ on:
 # This is a list of jobs that the action will run. In this case, we have only
 # one job called test.
 jobs:
-
-  # This is the name of the job 
   test:
-
-    # This is the environment that the job will run on. In this case, we are
-    # using the latest version of Ubuntu, however you can use other operating
-    # systems like Windows or MacOS if you like!
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python_version: ["3.12", "3.13", "3.14"]
+        os: ["ubuntu-latest", "windows-latest"]
+    runs-on: ${{ matrix.os }}
 
     # This is a list of steps that the job will run. Each step is a command
     # that will be executed on the environment.
