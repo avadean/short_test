@@ -78,3 +78,12 @@ def test_calculate_area(p1x, p1y, p2x, p2y, p3x, p3y, expected):
     p3 = Point(p3x, p3y)
     t = Triangle(p1, p2, p3)
     assert t.calculate_area() == expected
+
+
+def test_new():
+    p1 = Point(0, 0)
+    p2 = Point(10, 0)
+    p3 = Point(5, 10)
+    t = Triangle(p1, p2, p3)
+    expected = 50
+    assert t.calculate_area() == expected
