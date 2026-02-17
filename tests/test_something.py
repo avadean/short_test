@@ -85,7 +85,7 @@ def func(a, b):
 
 
 def test_func():
-    assert func(2, 7) == 9
+    assert func(10, 3) == 7
 
 
 # a new comment
