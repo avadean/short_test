@@ -29,12 +29,10 @@ jobs:
 
       # This is the name of the step. This is just a label that will be
       # displayed in the GitHub UI.
-      - name: Set up Python 3.12
-        # This command tells GitHub to use a pre-built action. In this case, we
-        # are using the actions/setup-python action to set up Python 3.12.
+      - name: Set up Python ${{ matrix.python_version }}
         uses: actions/setup-python@v6
         with:
-            python-version: "3.12"
+            python-version: ${{ matrix.python_version }}
 
       # This step installs the dependencies for the project such as pytest,
       # numpy, pandas, etc using the requirements.txt file we created earlier.
