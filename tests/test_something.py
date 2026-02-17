@@ -80,12 +80,12 @@ def test_calculate_area(p1x, p1y, p2x, p2y, p3x, p3y, expected):
     assert t.calculate_area() == expected
 
 
+
+
+
+
+
+
+
 def func(a, b):
     return a - b
-
-
-def test_func():
-    assert func(10, 3) == 7
-
-
-# a new comment
